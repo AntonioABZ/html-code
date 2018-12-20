@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Community Calculator</title>
+  
+  <script src="jquery-3.3.1.min.js"></script>
+
+    <style>
+   
+    </style>    
+    
+    
+</head>
+
+<body>
+    
+    <p>Organize your Time</p>
+<form>
+    <p>Box 1: </p>
+    <input id= "number1" type= "number" size="100"/>
+    p>Box 2:</p>
+    <input id="number2" type="number" />
+    
+</form> 
+
+
+<p>Tuesday</p>
+
+
+    
+  <script>
+  
+ 
+    <button id="sum">Click to calculate the sum.</button>
+    
+    <div id="output1">
+        
+    </div>
+    
+    <button id="average">Click to calculate the average.</button>
+    
+    <div id="output2">
+        
+    </div>
+    
+
+    <script>
+        /* global $*/
+        
+        $(document).ready(function () {
+            
+            
+            $("#sum").click(function () {
+                var number1 = parseInt($("#number1").val());
+                var number2 = parseInt($("#number2").val());
+            
+                var sum = number1 + number2;
+                
+                $("#output1").html("<p>The sum of those two numbers is: " + sum + "</p>");
+            });
+            
+            $("#average").click(function () {
+                
+                var number1 = parseInt($("#number1").val());
+                var number2 = parseInt($("#number2").val());
+                
+                var average = (number1 + number2) / 2;
+                
+                $("#output2").html("<p>The average of those two numbers is " + average + "</p>");
+            });
+            
+            
+            
+        });
+  
+  
+  /* global $*/
+
+
+/* user stories 
+1) user can load the calculator 
+2) user can put in 2 numbers letters not allowed.
+
+time 3) user can click on sum botton, bellow the button, the sum of numbers will appear
+4) user can enter new member in box old numbers cleared
+5) When sum is pressed, replaces old sum 
+*/
+
+
+
+
+  </script>
+
+    
+</body>
+
+
+</html>

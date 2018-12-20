@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <style>
+        #water {
+            width: 500px;
+            border-radius: 10px;
+        }
+        #gallery {
+            background-color: yellow;
+            width: 510px;
+            padding: 25px;
+        }
+        #gallery p {
+            text-align: center;
+        }
+        
+        #lightbox {
+            background-color:black;
+            width: 1300px;
+            margin:0 auto;
+            border-radius: 20px;
+            position: absolute;
+            top: 12.5%;
+            left: 12.5%;
+        }
+        
+        #currentImage {
+            text-align: center;
+        }
+        
+        #currentImage img {
+            width: 90%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <p></p>
+
+    <div id="gallery">
+        <p>
+            <img id="water" src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?cs=srgb&dl=beautiful-cascade-creek-460621.jpg&fm=jpg" />
+        </p>
+    </div>
+
+    <script>
+        /* global $*/
+        
+        // .html()     replaces current content with supplied content.
+        // .append()   places new content after existing content
+        // .prepend()  opposite of .append()
+        // .remove()   removes target from DOM.
+        
+        
+        //Step 1
+        $("#water").click(function() {
+            
+            $("#water").css("pointer-events", "none");
+            
+            // Step 2
+            $("body").append("<div id='lightbox'></div>");
+            
+            // Step 3
+            $("#lightbox").append(
+                `<p id="currentImage">
+                    <img src='https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?cs=srgb&dl=beautiful-cascade-creek-460621.jpg&fm=jpg' />
+            </p>`
+            );
+            
+            $("#currentImage img").click(function () {
+                $("#currentImage img").parent().remove();
+                $("#water").css("pointer-events", "auto");
+            });
+            
+        });
+
+    </script>
+</body>
+
+</html>

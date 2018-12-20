@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Validate Your Email</title>
+   
+  <script src="jquery-3.3.1.min.js"></script>
+    
+<body>
+  
+  <form>
+    <input type="text" id="emailInput"/>
+    
+  </form>
+     
+  <button>Is Your Email Valid?</button>
+
+   
+   
+  <script>  
+  /*global $*/
+  
+    $("button").click(function(){
+    
+      var email = $("#emailInput").val();
+  
+
+      var isValid = email.match(/^[a-zA-Z0-9.]+@[a-zA-Z0-9.]+\.[a-zA-Z]+[a-zA-Z]+$/g);
+      
+      console.log(isValid);
+      
+      if (isValid == null) {
+        console.log(isValid);
+        console.log("This email is -NOT- valid");
+        $("body").append("<h1>This  email - " + email + " - is NOT valid!</h1>");
+        
+      } else {
+        console.log("This email is valid ");
+        $("body").append("<h1>This  email - " + email + " - is valid! :)</h1>");
+      
+      }
+    
+    });
+
+        
+  
+   </script>
+</body>
+</html>

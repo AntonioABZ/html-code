@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  
+  <script src="jquery-3.3.1.min.js"></script>
+
+    <style>
+        #water,#water1, #water2, #water3, #water4, #toltec {
+              width: 960px;
+              border-radius: 80px;
+        }
+        #gallery {
+          background-color:	#40E0D0;
+          width: 560px;
+          padding: 55px;
+        }
+        
+        #gallery p {
+            text-align: center;
+            
+        }
+        
+        #lightbox {          
+          background-color:black;
+          width: 1000px;
+          margin:0 auto;
+          border-radius: 20px;
+          position: absolute;
+          top: 13%;
+          left: 13%;
+        }
+                
+        #currentImage {
+            text-align: center;
+        }
+        
+        
+        #currentImage img { 
+            width:90%;
+            margin-left: 50px;
+            margin-top: 50px;
+            text-align: center;
+        }    
+    
+      </style>    
+    
+    
+</head>
+
+<body>
+
+  
+  <div id= "gallery">
+    <p>
+      <img id="water" src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?cs=srgb&dl=beautiful-cascade-creek-460621.jpg&fm=jpg"/>
+      <img id="water1" src="https://images.pexels.com/photos/612999/pexels-photo-612999.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/> 
+      <img id="toltec" src="https://s3.amazonaws.com/kajabi-storefronts-production/site/2402/images/sSqVnDH3S9SC23FEmVPp_Four-A's-poster-sales-page.jpg "/>
+      <img id="water2" src=" https://images.pexels.com/photos/464334/pexels-photo-464334.jpeg?auto=compress&cs=tinysrgb&h=350"/>
+      <img id="water3" src="https://images.pexels.com/photos/213945/pexels-photo-213945.jpeg?auto=compress&cs=tinysrgb&h=350"/>  
+      <img id="water4" src="https://images.pexels.com/photos/613973/pexels-photo-613973.jpeg?auto=compress&cs=tinysrgb&h=350"/>    
+    </p>
+
+  </div>
+  
+    
+    
+  <script>
+  /* global $*/
+    /*  $("#water").click(function() {
+        
+        
+        var currentSize = $("#water").css("width");
+          console.log(currentSize)
+          
+          if (currentSize === "260px") {
+              $("#water").css("width", "900px");
+          } else {
+              $("#water").css("width", "260px");
+          }
+      });
+      */
+      
+      
+        //Step 1
+        $("#water").click(function() {
+            
+            $("#water").css("pointer-events", "none");
+            
+            // Step 2
+            $("body").append("<div id='lightbox'></div>");
+            
+            // Step 3
+            $("#lightbox").append(
+                `<p id="currentImage">
+                    <img src='https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?cs=srgb&dl=beautiful-cascade-creek-460621.jpg&fm=jpg' />
+                   <img src="https://images.pexels.com/photos/612999/pexels-photo-612999.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>
+            </p>`
+            );
+ 
+        
+        $("#currentImage img").click(function() {
+            $("#currentImage img").parent().remove();
+            $("#water,#water1").css("pointer-events", "auto");
+       
+       
+        //  ( ` ) = symbol used to write text and to keep concatenated and not change when pressed enter
+      });
+  
+  
+    });  
+// to create gallery research "this" and the use of loops  
+//alternative is to copy code over and over
+  </script>
+
+    
+</body>
+
+
+</html>

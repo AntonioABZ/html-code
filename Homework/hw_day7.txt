@@ -1,0 +1,12 @@
+From the many articles on code readability on MDN web doc and in
+stack overflow the five key points found in the articles in creating 
+good readable code.  Making sure the code has consistency in formatting 
+when using braces, naming (variables, classes, methods) and directory 
+layout. Two, is having good compact size code that does not take up 
+toomuch screen real estate, yet is clear design, well separated between components and has 
+a good use of white space. Three is leaving short good useful comments, that don’t over state
+the obvious and make redundant comments. Avoiding repetitive code, so as to avoid confusion and
+overlooking key codes in addition to not cutting and pasting within the same project,
+so as to also avoid repetitive code with mistakes. To write readable code,
+I plan to implement the suggestions in the many articles, using good, short meaningful names,
+comments that describe the why and the why not’s of the code and the good use of white space.    

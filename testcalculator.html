@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Community Calculator</title>
+  
+  <script src="jquery-3.3.1.min.js"></script>
+
+    <style>
+   
+    </style>    
+    
+    
+</head>
+
+<body>
+    
+    <p>Organize your Time</p>
+<form>
+    <p>Box 1: </p>
+    <input id= "number1" type= "number" size="100"/>
+    p>Box 2:</p>
+    <input id="number2" type="number" />
+    
+</form> 
+
+
+<p>Tuesday</p>
+
+
+    
+  <script>
+  
+ 
+    <button id="sum">Click to calculate the sum.</button>
+    
+    <div id="output1">
+        
+    </div>
+    
+    <button id="average">Click to calculate the average.</button>
+    
+    <div id="output2">
+        
+    </div>
+    
+
+    <script>
+        /* global $*/
+        
+        $(document).ready(function () {
+            
+            
+            $("#sum").click(function () {
+                var number1 = parseInt($("#number1").val());
+                var number2 = parseInt($("#number2").val());
+            
+                var sum = number1 + number2;
+                
+                $("#output1").html("<p>The sum of those two numbers is: " + sum + "</p>");
+            });
+            
+            $("#average").click(function () {
+                
+                var number1 = parseInt($("#number1").val());
+                var number2 = parseInt($("#number2").val());
+                
+                var average = (number1 + number2) / 2;
+                
+                $("#output2").html("<p>The average of those two numbers is " + average + "</p>");
+            });
+            
+            
+            
+        });
+  
+  
+  /* global $*/
+
+
+/* user stories 
+1) user can load the calculator 
+2) user can put in 2 numbers letters not allowed.
+
+time 3) user can click on sum botton, bellow the button, the sum of numbers will appear
+4) user can enter new member in box old numbers cleared
+5) When sum is pressed, replaces old sum 
+*/
+
+
+
+
+  </script>
+
+
+
+<body>
+    
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ77VMZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="header"> 
+    <img class="logo" src="images/logo.svg">
+    <h1>Time management calculator</h1>
+    </div>
+    <div class="content"> <table class="time__table" id="inputTable"><thead><tr><td class="category__title">&nbsp;</td>
+    <th class="day__column">Mon</th>
+    <th class="day__column">Tues</th>
+    <th class="day__column">Wed</th>
+    <th class="day__column">Thurs</th>
+    <th class="day__column">Fri</th>
+    <th class="day__column">Sat</th>
+    <th class="day__column">Sun</th>
+    </tr></thead><tbody>
+        <tr><th class="category__icon category__title category-2">Work hours</th>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td>
+        <td class="day__column day__input-cell" data-category="Work hours" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr>
+        <tr>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Wed"><input step="0.1" max="24" min="0" type="number">
+            <th class="category__icon category__title category-3">Travelling time</th></td>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td>
+            <td class="day__column day__input-cell" data-category="Travelling time" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr>
+                <th class="category__icon category__title category-4">Quality family time</th>
+    <td class="day__column day__input-cell" data-category="Quality family time" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td>
+    <td class="day__column day__input-cell" data-category="Quality family time" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td>
+    <td class="day__column day__input-cell" data-category="Quality family time" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Quality family time" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Quality family time" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Quality family time" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Quality family time" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr><th class="category__icon category__title category-5">Socialising</th><td class="day__column day__input-cell" data-category="Socialising" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Socialising" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Socialising" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Socialising" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Socialising" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Socialising" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Socialising" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr><th class="category__icon category__title category-6">Chores</th><td class="day__column day__input-cell" data-category="Chores" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Chores" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Chores" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Chores" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Chores" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Chores" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Chores" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr><th class="category__icon category__title category-7">Shopping</th><td class="day__column day__input-cell" data-category="Shopping" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Shopping" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Shopping" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Shopping" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Shopping" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Shopping" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Shopping" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr><th class="category__icon category__title category-8">Exercise/Health</th><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Exercise/Health" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr><th class="category__icon category__title category-9">Eating</th><td class="day__column day__input-cell" data-category="Eating" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Eating" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Eating" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Eating" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Eating" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Eating" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Eating" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td></tr><tr><th class="category__icon category__title category-10">Sleeping</th><td class="day__column day__input-cell" data-category="Sleeping" data-day="Mon"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Sleeping" data-day="Tues"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Sleeping" data-day="Wed"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Sleeping" data-day="Thurs"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Sleeping" data-day="Fri"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Sleeping" data-day="Sat"><input step="0.1" max="24" min="0" type="number"></td><td class="day__column day__input-cell" data-category="Sleeping" data-day="Sun"><input step="0.1" max="24" min="0" type="number"></td>
+</tr></tbody><tfoot><tr><th class="category__title">Title</th><td class="day__column day__total" data-day="Mon" aria-label="7"><span class="day__total__integer">7</span></td><td class="day__column day__total" data-day="Tues" aria-label="0"><span class="day__total__integer">0</span></td><td class="day__column day__total" data-day="Wed" aria-label="0"><span class="day__total__integer">0</span></td><td class="day__column day__total" data-day="Thurs" aria-label="0"><span class="day__total__integer">0</span></td><td class="day__column day__total" data-day="Fri" aria-label="0"><span class="day__total__integer">0</span></td><td class="day__column day__total" data-day="Sat" aria-label="0"><span class="day__total__integer">0</span></td><td class="day__column day__total" data-day="Sun" aria-label="0"><span class="day__total__integer">0</span></td></tr></tfoot></table><div class="charts"><div class="chart__container"><h2>Time management</h2><div class="bar-chart"><div id="timeMgmt"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="300px" class="ct-chart-bar ct-horizontal-bars" style="width: 100%; height: 300px;"><g class="ct-grids"><line y1="265" y2="265" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="240" y2="240" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="215" y2="215" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="190" y2="190" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="165" y2="165" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="140" y2="140" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="115" y2="115" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="90" y2="90" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="65" y2="65" x1="100" x2="396" class="ct-grid ct-vertical"></line><line y1="40" y2="40" x1="100" x2="396" class="ct-grid ct-vertical"></line><line x1="100" x2="100" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="142.28571428571428" x2="142.28571428571428" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="184.57142857142856" x2="184.57142857142856" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="226.85714285714286" x2="226.85714285714286" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="269.1428571428571" x2="269.1428571428571" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="311.42857142857144" x2="311.42857142857144" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="353.7142857142857" x2="353.7142857142857" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="396" x2="396" y1="15" y2="265" class="ct-grid ct-horizontal"></line></g><g><g class="ct-series ct-series-a"><line y1="252.5" y2="252.5" x1="100" x2="372.32" class="ct-bar" ct:value="161"></line><line y1="227.5" y2="227.5" x1="100" x2="111.84" class="ct-bar" ct:value="7"></line><line y1="202.5" y2="202.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="177.5" y2="177.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="152.5" y2="152.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="127.5" y2="127.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="102.5" y2="102.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="77.5" y2="77.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="52.5" y2="52.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line><line y1="27.5" y2="27.5" x1="100" x2="100" class="ct-bar" ct:value="0"></line></g></g><g class="ct-labels"><foreignObject style="overflow: visible;" y="240" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Other</span></foreignObject><foreignObject style="overflow: visible;" y="215" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Work hours</span></foreignObject><foreignObject style="overflow: visible;" y="190" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Travelling time</span></foreignObject><foreignObject style="overflow: visible;" y="165" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Quality family time</span></foreignObject><foreignObject style="overflow: visible;" y="140" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Socialising</span></foreignObject><foreignObject style="overflow: visible;" y="115" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Chores</span></foreignObject><foreignObject style="overflow: visible;" y="90" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Shopping</span></foreignObject><foreignObject style="overflow: visible;" y="65" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Exercise/Health</span></foreignObject><foreignObject style="overflow: visible;" y="40" x="10" height="25" width="80"><span class="ct-label ct-vertical ct-start" style="height: 25px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Eating</span></foreignObject><foreignObject style="overflow: visible;" y="10" x="10" height="30" width="80"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 80px" xmlns="http://www.w3.org/2000/xmlns/">Sleeping</span></foreignObject><foreignObject style="overflow: visible;" x="100" y="270" width="42.285714285714285" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">0</span></foreignObject><foreignObject style="overflow: visible;" x="142.28571428571428" y="270" width="42.285714285714285" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">25</span></foreignObject><foreignObject style="overflow: visible;" x="184.57142857142856" y="270" width="42.28571428571429" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">50</span></foreignObject><foreignObject style="overflow: visible;" x="226.85714285714286" y="270" width="42.28571428571428" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">75</span></foreignObject><foreignObject style="overflow: visible;" x="269.1428571428571" y="270" width="42.28571428571428" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">100</span></foreignObject><foreignObject style="overflow: visible;" x="311.42857142857144" y="270" width="42.285714285714306" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">125</span></foreignObject><foreignObject style="overflow: visible;" x="353.7142857142857" y="270" width="42.28571428571428" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 42px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">150</span></foreignObject><foreignObject style="overflow: visible;" x="396" y="270" width="30" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 30px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">175</span></foreignObject></g></svg></div></div></div><div class="chart__container"><h2>Weekly hours</h2><ul class="key"><li class="category__icon category-1" data-category="commitments">Commitments </li><li class="category__icon category-2" data-category="study">Study</li></ul><div class="pie-chart"><div id="weekly"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-pie" style="width: 100%; height: 100%;"><g class="ct-series ct-series-a"><path d="M120.867,7.385A70,70,0,0,0,102.75,5L102.75,75Z" class="ct-slice-pie" ct:value="7"></path></g><g class="ct-series ct-series-b"><path d="M102.75,5A70,70,0,1,0,120.631,7.322L102.75,75Z" class="ct-slice-pie" ct:value="161"></path></g><g><text dx="107.31841672770182" dy="40.299429851916635" text-anchor="middle" class="ct-label">7</text><text dx="98.1815832722982" dy="109.70057014808336" text-anchor="middle" class="ct-label">161</text></g></svg></div></div></div></div><div class="buttons"><button class="btn print__button" id="printBtn" onclick="window.print()">Print</button></div></div><script src="start.js"></script>
+</body>
+
+
+
+</html>
+
+
+

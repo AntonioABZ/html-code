@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Community Calculator</title>
+  
+  <script src="jquery-3.3.1.min.js"></script>
+
+    <style>
+   
+    </style>    
+    
+    
+</head>
+
+<body>
+
+  <p>Welcomt to my calculator</p>
+  <p>please type in two numbers into the boxes below!</p>
+  
+  <form>
+      <p>Box 1 :</p> 
+      <input id="number1" type="text" />
+        <p>Box 2 :</p> 
+      <input id="mumber2" type="text" />
+      
+  </form>
+
+    <button> click here to calculate the sum.</button>
+  
+  <div id= "output1">
+      
+  </div>
+    
+    <button> click here to calculate average.</button>
+    <div id="output2">
+        
+    </div>
+    
+    
+    
+  <script>
+  /* global $*/
+
+
+    $(document).ready(function() {
+        
+    $("#sum").click(function() {
+        
+        var number1 = $('#number1').val();
+        var number2 = $('#number2').val();
+        
+        var sum = number1 + number2;
+        var average = sum / 2;
+        
+        $("output1").html("<p>The sum of those two numbers is: " + sum + "</p>");
+    });
+    $("#average").click(function(){
+       
+        var average = (number1 + number2) / 2;
+       
+        $("output2").html("<p>The average of those two numbers is: " + average + "</p>");
+        
+    });
+
+  </script>
+
+    
+</body>
+
+
+</html>

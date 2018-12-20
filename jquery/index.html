@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>My jQuery Practice Page</title>
+   
+    <script src="jquery-3.3.1.min.js"></script>
+    
+    <style>
+    #box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 500px;
+      height: 500px;
+      background-color: yellow;
+      border-radius: 80%;
+      z-index: -100;
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+    <h1>Hola!! this is my interactive webpage </h1>
+    
+    <button id="up">Move Up</button>
+    <button id="down">Move Down</button>
+    
+    <button id="go">Grow</button>
+    <button id="left">Move reverse</button>
+    <button id="right">Move foward</button>
+    
+    <div id="box"></div>
+    
+    
+  <script>  
+  /*global $*/
+  
+  $("#down").click(function() {
+    var existingTop = $("#box").css("top");
+    console.log(existingTop);
+  $('#box').css("top", parseInt(existingTop) + 80);
+    }); 
+    
+  $("#up").click(function() {
+    var existingTop = $("#box").css("top");
+    console.log(existingTop);
+    $('#box').css("top", parseInt(existingTop) - 80);
+  });
+
+
+
+
+
+$("#go").click(function() {
+  var existingTop = $("#box").css("top");
+  console.log(existingTop);
+  $( "#box" ).animate({
+    width: "800px",
+    height: "800px",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 150 );
+});
+
+
+
+
+
+
+
+  
+  $("#left").click(function() {
+    var existingLeft = $("#box").css("left");
+    console.log(existingLeft);
+    $("#box").css("left", parseInt(existingLeft) - 80);
+  });
+  
+  $("#right").click(function() {
+    var existingLeft = $("#box").css("left");
+    console.log(existingLeft);
+    $("#box").css("left", parseInt(existingLeft) + 80);
+  });
+
+
+
+
+
+  
+  </script>
+</body>
+</html>

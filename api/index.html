@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Practice page </title>
+  
+  <script src="../jquery-3.3.1.min.js"></script>
+  
+    </head>
+    <body>
+
+    <script>
+    var data;
+    
+    $.get("https://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&APPID=2606fe09465ad386e1b63d71eb1dfb47", function (responce) {
+        console.log(responce);
+        
+        $("body").html(
+          "<p>The current weather for " + responce.name + "is a " + responce.weather )
+        
+        $("body").html(
+          "<p>The current weather for " + 
+          response.name +
+          " is a " + 
+          response.weather[0].description + 
+          "</p>"
+          );
+        
+  });
+
+
+  /* global $ = jquery  */
+  
+  
+
+    </script>
+
+    
+    </body>
+
+
+</html>

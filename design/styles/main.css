@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Noto+Serif+JP|Roboto|Ruslan+Display');
+
+body {
+    background-color: #00ffff;
+    font-family: "Great Vibes";
+    text-align: center;
+}
+ .photo {
+      display:inline-block;
+      margin: 0;
+      width: 250px;
+      width:80px;
+    }
+
+   #footer {
+      width: 100%;
+      height: 200px;
+      background-color:#0000ff;
+      border-radius: 50px;
+      margin: 0 auto;
+    }
+
+a:visited {
+    color:#ffff00;
+}
+
+a:active {
+    color:#0000ff;
+}
+a:hover {
+    color: cyan;
+}
+p {
+    background-color: #ffffff;
+    font-weight: normal;
+    font-size: 35px;
+    font-family: "Arial" sans-serif;
+    margin: 50px 13px;
+    padding: 10px;
+    height: 500px;
+    border-color: black;
+    border-width: 20px;
+    border-radius: 70px;
+}
+h1 { 
+    background-color: #ffffff;
+    font-size: 80px;
+    font-family: fantasy;
+    width: 500;
+    margin: 30px 30px;
+    border-radius: 70px;
+}    
+h2 {
+    background-color: #ffffff;
+    font-size: 40px;
+    margin: 30px 30px;
+    border-radius: 100px;
+}
+
+li {
+    background-color: #ffff00;
+    padding: 20px;
+    border-radius: 100px;
+    font-size: 50px;
+}
+
+img {
+    padding: 20px;
+    border-radius: 100px;
+}
+
+i { 
+    font-size : 50px;
+    color: white;
+    margin: 30px 30px; 
+#africansym 
+    
+}

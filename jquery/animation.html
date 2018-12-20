@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>testing JQuery UI Animation</title>
+
+    <link rel="stylesheet" href="jquery-ui.min.css" />
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+
+
+    <style>
+        h3 {
+            background-color: yellow;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Light</a></li>
+        <li><a href="#tabs-2">Color</a></li>
+        <li><a href="#tabs-3">Alive</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, .</p>
+      </div>
+      <div id="tabs-2">
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat.</p>
+      </div>
+      <div id="tabs-3">
+        <p>Mauris eleifend est et turpis. Duis id erat. .</p>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, .</p>
+      </div>
+    </div>
+    
+    <div id="accordion">
+
+        <h3>How much does time do you need to study Networking class?</h3>
+        <div>
+            <p>15hrs a week </p>
+        </div>
+
+        <h3>How much does time do you need to study HTML class?</h3>
+        <div>
+            <p>10hrs a week </p>
+        </div>
+
+        <h3>How much does time do you need to study MEDA class?</h3>
+        <div>
+            <p>10hrs a week </p>
+        </div>
+
+        <h3>How much does time do you need to work out?</h3>
+        <div>
+            <p>8 hrs a week </p>
+        </div>
+
+        <h3>Movement of information from one computer application to another through and electrical / optical transmision system</h3>
+        <div>
+            <p>Data communications</p>
+        </div>
+    </div>
+
+
+        <form>
+
+            <input type="text" id="datepicker" />
+
+        </form>
+        
+
+        
+            
+    <div id="dialog" title="Basic dialog">
+          <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
+        
+
+    <button id="opener"> Click here to Open</button> 
+    
+    
+
+        
+
+
+    <script>
+        /* global $*/
+
+
+        $(document).ready(function() {
+
+            $( "#tabs" ).tabs(
+                                {
+                    collapsible: true,
+                    active: false
+                }
+                
+                );
+
+            $("#accordion").accordion(
+                {
+                    collapsible: true,
+                    active: false
+                }
+            );
+
+            $("#datepicker").datepicker();
+            
+            $("#dialog").dialog({
+                autoOpen: false
+            });
+            
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");  
+                
+            });
+            
+           
+        });
+    </script>
+
+
+</body>
+
+
+</html>

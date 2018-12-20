@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My jQuery Practice Page</title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <h1>Hola!! this is my interactive webpage </h1>
+
+    <button id="green">Change color to green! </button>
+    <button id="red"> Change color to red! </button>
+    <button id="black"> Change color to yellow! </button>
+    <button id="blue"> Change color to blue! </button>
+
+    <form>
+        <p>Username:</p>
+        <input id="username" type="text" />
+        <p>Password</p>
+        <input id="password" type="password" />
+    </form>
+
+    <button id="login">Log In</button>
+
+    <script>
+        /* global $ */
+
+        /* $('button').click( function () { */
+        /* function with a space is a anonomus function  */
+
+
+
+
+        $("#red").click(function() {
+            $('h1').css('color', 'red');
+        });
+
+        $("#green").click(function() {
+            $('body').css("background-color", "yellow");
+            $('h1').css('color', 'green');
+        });
+
+        $("#blue").click(function() {
+            $('h1').css('color', 'blue');
+            $('body').css("background-color", "yellow");
+        });
+
+        $("#yellow").click(function() {
+            $('h1').css('color', 'yellow');
+        });
+        $("#login").click(function() {
+            var usernameValue = $("#username").val();
+            console.log(usernameValue);
+            var passwordValue = $("#password").val();
+
+            if (usernameValue == "Tony") {
+
+                if (passwordValue == "growing") {
+                    console.log("Correct username and password!");
+                }
+                else {
+                    console.log("Try again, it's the wrong password");
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

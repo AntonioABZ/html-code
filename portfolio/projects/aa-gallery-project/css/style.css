@@ -1,0 +1,61 @@
+body {
+  background-color: #000000;
+}
+
+#header{
+    width: 700px;
+    height: 100px;
+    margin: 10px auto 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    font-family: "Great Vibes";    
+    font-size: 30px;
+}
+
+#middle{
+    text-align: center;
+    padding-top: 25px;
+}
+
+#article{
+    padding-bottom: 10px;
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    border-radius: 70px;
+}
+
+#footer{
+    background-color: #E0E0E0;
+    width: 1300px;
+    height: 100px;
+    margin: 10px auto 10px auto;
+    border-radius: 70px;
+}
+
+#copyr,#osercori{
+    font-size: 25px;
+    color: #FF0000;
+    padding-top: 35px;
+    text-align: center;
+}
+
+#osercori:hover{
+    color: #795548;
+}
+
+#images{
+    text-align: center;
+    padding: 150px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+i { 
+    font-size : 50px;
+    color: white;
+    margin: 30px 30px; 
+
+}
+
